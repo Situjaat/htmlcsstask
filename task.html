@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .main{
+        background-color: rgb(168, 168, 215)
+      }
+        nav {
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgb(66, 104, 186);
+            border-radius: 20px;
+        }
+
+        nav img {
+            width: 100px; height: 50px;
+            
+        }
+        .span_div {
+      display: none;
+      width: 15%;
+    }
+
+    .span_div span {
+      font-size: 25px;
+      color: black;
+    }
+      .home{
+        display: flex;
+        justify-content: space-evenly;
+        color: wheat;
+      }
+      .home:hover{
+        cursor: pointer;
+        color: deepskyblue;
+       
+      }
+      .mid{
+        /* border: 1px solid red; */
+        text-align: center;
+        margin-top: 30px;
+        /* background-color: rgb(19, 18, 19); */
+      }
+      .mid img{
+        width: 1600px;
+        height: 1400px;
+        border-radius: 20px;
+      }
+      .img{
+        /* border: 1px solid green; */
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 40px;
+        /* background-color: rgba(102, 70, 172, 0.404); */
+        margin-top: 10px;
+        transition: all 2.5s  ease-in-out;
+        cursor: pointer;
+        padding: 10px 10px;    
+        
+
+      }
+      .img img{
+        width: 400px;
+        height: 350px; 
+        border-radius: 5px; 
+        transition: all 2.1s  ease-in-out;
+        margin: auto;
+        overflow: hidden;
+
+        
+      }
+      .img img:hover{
+        transform: scale(1.1);
+        overflow: hidden;
+        cursor: pointer;
+        
+
+      }
+      .card{
+        /* border: 1px solid blue; */
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin-top: 20px;
+        padding: 20PX;
+        background-color: rgb(154, 154, 215);
+        color: azure;
+        text-align: center;
+        transition: all 2.1s  ease-in-out;
+        overflow: hidden;
+      }
+      .card img{
+        width: 450px;
+        height: 350px;
+        padding: 10px;
+        border-radius: 20px;
+        transition: all 2.1s  ease-in-out;
+        overflow: hidden;
+        
+      }
+      .card img:hover{
+        transform: scale(1.1);
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      footer{
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        background-color: rgb(8, 5, 5);
+        color: azure;
+        margin-top: 20px;
+        border-radius: 20px;
+        text-align: center;
+      }
+      footer h2{
+        color: rgb(29, 73, 204);
+      }
+     
+      h1{
+        /* text-align: center; */
+        margin-top: 10px;
+        line-height: 1;
+      }
+      h4{
+        text-align: center;
+        
+      }
+
+
+
+      @media screen and (min-width:300px) and (max-width:750px) {
+        .main{
+        background-color: rgb(168, 168, 215)
+      }
+        nav {
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgb(66, 104, 186);
+            border-radius: 20px;
+        }
+
+        nav img {
+            width: 100px; height: 50px;
+            
+        }
+        .span_div {
+      display: flex;
+      width: 20%;
+    }
+
+    .span_div span {
+      font-size: 25px;
+      color: black;
+      margin-left: 120px;
+      margin-top: 10px;
+    }
+      .home{
+      display: none;
+      }
+      .mid{
+        /* border: 1px solid red; */
+        text-align: center;
+        margin-top: 30px;
+        /* background-color: rgb(19, 18, 19); */
+      }
+      .mid img{
+        width: 650px;
+        height: 550px;
+        border-radius: 20px;
+      }
+      .img{
+        /* border: 1px solid green; */
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
+        /* background-color: rgba(102, 70, 172, 0.404); */
+        margin-top: 10px;
+        transition: all 2.5s  ease-in-out;
+        cursor: pointer;
+        padding: 10px 10px;    
+        
+
+      }
+      .img img{
+        width: 250px;
+        height: 200px; 
+        border-radius: 5px; 
+        transition: all 2.1s  ease-in-out;
+        margin: auto;
+        overflow: hidden;
+
+        
+      }
+      .img img:hover{
+        transform: scale(1.1);
+        overflow: hidden;
+        cursor: pointer;
+        
+
+      }
+      .card{
+        /* border: 1px solid blue; */
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+        margin-top: 20px;
+        padding: 20PX;
+        background-color: rgb(154, 154, 215);
+        color: azure;
+        text-align: center;
+        transition: all 2.1s  ease-in-out;
+        overflow: hidden;
+      }
+      .card img{
+        width: 250px;
+        height: 200px;
+        padding: 10px;
+        border-radius: 20px;
+        transition: all 2.1s  ease-in-out;
+        overflow: hidden;
+        
+      }
+      .card img:hover{
+        transform: scale(1.1);
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      footer{
+        /* border: 1px solid red; */
+        display: grid;
+      grid-template-columns: repeat(2,1fr);
+      background-color: rgb(8, 5, 5);
+        color: azure;
+        margin-top: 20px;
+        border-radius: 20px;
+        text-align: center;
+      }
+      footer h2{
+        color: rgb(29, 73, 204);
+      }
+      h1{
+        text-align: center;
+        margin-top: 10px;
+        line-height: 1;
+      }
+      h4{
+        text-align: center;
+        
+      }
+        
+      }
+
+
+      @media screen and (min-width:200px) and (max-width:400px) {
+        .main{
+        background-color: rgb(168, 168, 215)
+      }
+        nav {
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgb(66, 104, 186);
+            border-radius: 20px;
+        }
+
+        nav img {
+            width: 100px; height: 50px;
+            
+        }
+        .span_div {
+      display: flex;
+      width: 20%;
+    }
+
+    .span_div span {
+      font-size: 25px;
+      color: black;
+      margin-left: 90px;
+      margin-top: 10px;
+    }
+      .home{
+      display: none;
+      }
+      .mid{
+        /* border: 1px solid red; */
+        text-align: center;
+        margin-top: 30px;
+        /* background-color: rgb(19, 18, 19); */
+      }
+      .mid img{
+        width: 350px;
+        height: 250px;
+        border-radius: 20px;
+      }
+      .img{
+        /* border: 1px solid green; */
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 40px;
+        /* background-color: rgba(102, 70, 172, 0.404); */
+        margin-top: 10px;
+        transition: all 2.5s  ease-in-out;
+        cursor: pointer;
+        padding: 10px 10px;    
+        
+
+      }
+      .img img{
+        width: 250px;
+        height: 200px; 
+        border-radius: 5px; 
+        transition: all 2.1s  ease-in-out;
+        margin: auto;
+        overflow: hidden;
+
+        
+      }
+      .img img:hover{
+        transform: scale(1.1);
+        overflow: hidden;
+        cursor: pointer;
+        
+
+      }
+      .card{
+        /* border: 1px solid blue; */
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+        margin-top: 20px;
+        padding: 20PX;
+        background-color: rgb(154, 154, 215);
+        color: azure;
+        text-align: center;
+        transition: all 2.1s  ease-in-out;
+        overflow: hidden;
+      }
+      .card img{
+        width: 250px;
+        height: 200px;
+        padding: 10px;
+        border-radius: 20px;
+        transition: all 2.1s  ease-in-out;
+        overflow: hidden;
+        
+      }
+      .card img:hover{
+        transform: scale(1.1);
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      footer{
+        /* border: 1px solid red; */
+        display: grid;
+      grid-template-columns: repeat(1,1fr);
+        background-color: black;
+        color: white;
+        margin-top: 20px;
+        border-radius: 20px;
+        text-align: center;
+      }
+      footer h2{
+        color: rgb(29, 73, 204);
+      }
+      h1{
+        text-align: center;
+        margin-top: 10px;
+        line-height: 1;
+      }
+      h4{
+        text-align: center;
+        
+      }
+        
+      }
+    </style>
+</head>
+
+<body>
+  <div class="main">
+    <nav>
+        <img src="./logo.avif" alt="">
+        <div class="home">
+            <ul>HOME </ul>
+            <ul>ABOUT</ul>
+            <ul>CONTACT</ul>
+            <ul>FOUNDER</ul>
+        </div>
+        <div class="span_div"><span>&#9776;</span></div>
+    </nav>
+
+    <div class="mid">
+        <img src="./ipl-2024-complete-squads.webp" alt="">
+
+    </div>
+    <h1>Players Gallery</h1>
+    <div class="img">
+        <img src="./virat-kohli-23.avif" alt="">
+        <img src="./ms dhoni.webp" alt="">
+        <img src="./rohit sharma.jpg" alt="">
+        <img src="./sanju.jpg" alt="">
+        <img src="./jaiswal.jpg" alt="">
+        <img src="./jadeja 1.webp" alt="">
+        <img src="./dubey.jpg" alt="">
+        <img src="./pant 1.jpg" alt="">
+
+    </div>
+<h1>Venues</h1>
+    <div class="card">
+      <div>
+      <img src="./vankhede.avif" alt="">
+<h3> VENUE</h3>
+<h4>VANKEDE MUMBAI</h4>
+</div>
+<div>
+<img src="./eden garden.jpg" alt="">
+<h3> VENUE</h3>
+<h4>EDEN GARDENS KOLKATA</h4>
+</div>
+<div>
+<img src="./modi 2.jpg" alt="">
+<h3> VENUE</h3>
+<h4>NAREDRA MODI AHEMDABAD</h4>
+    </div>
+    <div>
+    <img src="./sms.avif" alt="">
+    <h3> VENUE</h3>
+<h4>SMS JAIPUR</h4>
+</div> </div>
+<footer>
+  <div>
+    <h2>
+      Official Partner
+    </h2>
+    <p>DREAM 11</p>
+    <P>MY11CIRCEL</P>
+    <P>WINZO</P>
+  </div>
+  <div>
+    <h2>Sponser</h2>
+    <p>TATA</p>
+    <p>SBI BANK</p>
+    <p>JIO</p>
+  </div>
+  <div>
+    <h2>Media Partner </h2>
+    <p>DAINIK BHASKAR</p>
+    <p>NEWS NATION</p>
+    <p>AAJ TAK NEWS</p>
+  </div>
+  <div>
+    <h2>Live Stream</h2>
+    <p>JIO CINEMA</p>
+    <p>STAR SPORTS</p>
+    <p>HOT STAR</p>
+  </div>
+</footer>
+</div>
+<h4>Copyright © IPL 2024 All Rights Reserved</h4>
+</body>
+
+</html>
